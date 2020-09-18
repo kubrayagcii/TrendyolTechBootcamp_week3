@@ -21,10 +21,9 @@ public class WordCounterTests {
     @Test
     public void ignorePunctuationsExceptApostrophes_WhenPunctuationsIgnored_ShouldReturnString() {
         //Arrange
-        WordCounter sut = new WordCounter();
+        String sentence = "This test is punctuations , and capital Cases test. Try apostrophe's.";
 
         //Act
-        String sentence = "This test is punctuations , and capital Cases test. Try apostrophe's.";
         String new_sentence = sut.ignorePunctuationsExceptApostrophes(sentence);
 
         //Assert
